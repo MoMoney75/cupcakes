@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <h1>CUPCAKES</h1>
+
+    <form action="/api/cupcakes" method="post">
+        <label for="flavor">flavor</label>
+        <input type="text" name="flavor">
+
+        <label for="size">size</label>
+        <input type="text" name="size">
+
+        <label for="rating">rating</label>
+        <input type="text" name="rating">
+
+        <label for="image_url">image url</label>
+        <input type="text" name="image_url">
+
+        <button id="formSubmitButton">submit</button>
+
+    </form>
+
+    <ul id="allCupcakes"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
